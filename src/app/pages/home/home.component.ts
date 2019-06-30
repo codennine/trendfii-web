@@ -21,12 +21,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.stockService.listStocks()
-      .subscribe(response => {
-        if(response.status == 200) {
-          this.stocks = response.json().result;
-        }
-      });
+    
   }
 
 }
