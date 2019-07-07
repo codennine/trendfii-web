@@ -1,3 +1,121 @@
-<p>
-  profile works!
-</p>
+<section class="hero is-primary is-medium" style="height: 320px; background-image: url(https://pbs.twimg.com/profile_banners/2467791/1469484132/1500x500); background-size: contain; background-attachment: fixed;">
+</section>
+
+<nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+      <h1 class="is-size-3">{{ stock }}</h1>
+    </a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" [routerLink]="['/', stock]">
+        News
+      </a>
+
+      <a class="navbar-item" routerLink="forum">
+        Forum
+      </a>
+
+      <a class="navbar-item">
+        Dividendos
+      </a>
+
+      <a class="navbar-item">
+        Relatórios & Informes
+      </a>
+
+      <a class="navbar-item">
+        Contratos
+      </a>
+
+      <a class="navbar-item">
+        Processos
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Mais
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item">
+            Vacância
+          </a>
+          <a class="navbar-item">
+            Fotos
+          </a>
+
+          <a class="navbar-item">
+            Indicadores
+          </a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Análise
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item">
+            Base de cotistas
+          </a>
+          <a class="navbar-item">
+            Patrimônio
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-warning">
+            <strong>124 seguidores</strong>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<div style="margin-top: 20px; padding-left: 20px; padding-right: 20px;">
+  <div class="columns">
+    <div class="column is-3">
+      <div style="padding-left: 20px; padding-right: 20px;">
+          <h1 class="is-size-4 has-text-bold">ABC Plaza Shopping <small>@abcp11</small></h1>
+          <p style="font-size: 14px;">FII dono do Shopping ABC Plaza em Santo André. Com uma base de mais de 30 mil cotistas</p>
+          <br />
+          <p style="font-size: 14px;"><strong>Administradora:</strong> RIO BRAVO (<a href="#">riobravo.com.br</a>)</p>
+          <p style="font-size: 14px;"><strong>Gestora:</strong> RIO BRAVO (<a href="#">riobravo.com.br</a>)</p>
+      </div>
+    </div>
+
+    <div class="column is-6">
+      <router-outlet></router-outlet>
+    </div>
+
+    <div class="column is-3">
+      <div class="related-fiis" style="padding: initial 20px;">
+        <h1 class="is-size-6">Relacionados</h1>
+        
+        <div class="list-fiis" style="margin-top: 10px;">
+          <ul>
+            <li>FIGS11</li>
+            <li>FIGS11</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

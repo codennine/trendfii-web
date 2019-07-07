@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'app-profile',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
+  stock: string = '';
+
+  constructor(
+    private route: ActivatedRoute
+  ) { 
+    this.stock = this.route.snapshot.params['stock'];
+    console.log(this.route.snapshot.params.stock);
+  }
 
   ngOnInit() {
+    console.log('iniciado');
   }
 
 }

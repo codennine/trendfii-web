@@ -7,13 +7,19 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { TrendsComponent } from './components/common/trends/trends.component';
+import { ForumComponent } from './components/common/forum/forum.component';
+import { RelatedComponent } from './components/common/related/related.component';
+import { NewsComponent } from './components/common/news/news.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ProfileComponent,
-    TrendsComponent
+    TrendsComponent,
+    ForumComponent,
+    RelatedComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,

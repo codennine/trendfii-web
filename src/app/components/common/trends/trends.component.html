@@ -1,5 +1,5 @@
 <ul class="menu-list">
   <li *ngFor="let stock of stocks.slice(0,6)">
-    <a [routerLink]="stock.sigla">{{ stock.sigla }}</a>
+    <a [routerLink]="['/', stock.sigla]" style="color: blue;">#{{ stock.sigla }}</a>
   </li>
 </ul>
