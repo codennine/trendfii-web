@@ -2,5 +2,21 @@
 @import '../node_modules/bulma/bulma.sass';
 
 body {
-    background: #fdfcea;
+    // background: #fdfcea;
+    background: #e6ecf0;
+
+    nav  {
+        &.navbar {
+            padding: {
+                left: 80px;
+                right: 80px;
+            }
+        }
+    }
+}
+
+.media {
+    background-color: #fff;
+    margin: 0px; 
+    padding: 10px;
 }

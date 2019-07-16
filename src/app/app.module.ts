@@ -10,6 +10,8 @@ import { TrendsComponent } from './components/common/trends/trends.component';
 import { ForumComponent } from './components/common/forum/forum.component';
 import { RelatedComponent } from './components/common/related/related.component';
 import { NewsComponent } from './components/common/news/news.component';
+import { ListagemComponent } from './pages/listagem/listagem.component';
+import { IposComponent } from './pages/ipos/ipos.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { NewsComponent } from './components/common/news/news.component';
     TrendsComponent,
     ForumComponent,
     RelatedComponent,
-    NewsComponent
+    NewsComponent,
+    ListagemComponent,
+    IposComponent
   ],
   imports: [
     BrowserModule,
